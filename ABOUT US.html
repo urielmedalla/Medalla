@@ -1,0 +1,104 @@
+<HTML>
+
+<TITLE>Tambay // ABOUT</TITLE>
+
+<HEAD>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="ABOUTCSS.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</HEAD>
+
+
+<BODY>
+
+<div class="header">
+  <a  href="index.html"  class="logo">
+  <img src="LOGO/7.jpg" width="200">
+  </a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+	<a href="CITIES.html">Tambayan</a>
+    <a href="Contact us.html">Contact Us</a>
+    <a class="active" href="ABOUT US.html">About</a>
+	<a href="ABOUT MANILA.html">Manila</a>
+  </div>
+</div>
+
+<style>
+body {
+  background-image: url('aboutbg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<br>
+<br>
+<br>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p><img src="LOGO/2.png" width="300"></p>
+    <p>/ T A M - B A Y /</p>
+	<p>Standing around or hanging out or loafing around.</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Goal:</p>
+    <p>To help people decide where to hang out that is peaceful and breezy.</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Where did the idea came from?</p>
+    <p>There are times where me and my friends can't decide where to go,</p>
+	<p>I decided to create this website to share where we usually hangout.</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</BODY>
+</HTML>

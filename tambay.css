@@ -1,0 +1,68 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  font-weight: bolder;
+}
+
+.tablink:hover {
+  background-color: #9A9A9A ;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 304%;
+}
+
+#Home {background-color: #434343;}
+#News {background-color: #434343;}
+#Contact {background-color: #434343;}
+#About {background-color: #434343 ;}
+
+H3{ 
+	color:white; 
+	text-align: center; 
+	font-family:NEXA;
+	outline-color: gray;
+}
+
+p{
+	color:white; 
+	text-align:center; 
+	font-family:NEXA;
+	}
+	
+	.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding:  4px;
+  padding-left: 70px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}

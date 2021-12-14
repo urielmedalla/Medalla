@@ -1,0 +1,141 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 0; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 0; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=button] {
+  background-color: #262626;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=button]:hover {
+  background-color: #C89A3B;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  opacity: 1;
+  padding: 20px;
+}
+
+
+
+H1{
+	color: white;
+    text-align: center;
+}
+H2{
+	color: white;
+    text-align: center;
+}
+
+
+/* minimal sm icons */
+b, b:hover {
+    color: #C2C2C2;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+    margin: 0;
+    padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+	width: 50px;
+	text-decoration: none;
+}
+
+.socialbtns .fa {
+    color: #FFF;
+	width: 25px;
+	
+    text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -o-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+    color: #C89A3B;
+    text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -webkit-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -moz-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -o-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    transition: all ease 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+}

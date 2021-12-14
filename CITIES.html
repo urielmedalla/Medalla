@@ -1,0 +1,136 @@
+<HTML>
+
+<TITLE>
+Tambay // TAMBAYAN
+</TITLE>
+
+<HEAD>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="tambay.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</HEAD>
+
+
+
+<BODY style="background-color:black;">
+
+<div class="header">
+  <a  href="index.html"  class="logo">
+  <img src="LOGO/7.jpg" width="200">
+  </a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+	<a class="active" href="CITIES.html">Tambayan</a>
+    <a href="Contact us.html">Contact Us</a>
+    <a href="ABOUT US.html">About</a>
+	<a href="ABOUT MANILA.html">Manila</a>
+  </div>
+</div>
+
+<button class="tablink" onclick="openPage('Home', this, '#434343')" id="defaultOpen">Dampa</button>
+<button class="tablink" onclick="openPage('News', this, '#434343')">Basura Island</button>
+<button class="tablink" onclick="openPage('Contact', this, '#434343')">Amosup</button>
+<button class="tablink" onclick="openPage('About', this, '#434343')">Gloria Maris</button>
+
+<div id="Home" class="tabcontent">
+  <h3>// D A M P A_B R I D G E //</h3>
+  <p>14°32'38.2"N 120°59'00.0"E</p>
+  <p text-align="justify">A bridge near SM Mall of Asia, it is good for recreational activities. On this bridge it is barricaded so cars won't pass through. People here practice on their roller skates, bikes, and skateboards.</p>
+      
+	<div class="row">
+		<div class="column">
+		<img src="DAMPA/dampa.jpg" width="850px">
+		<img src="DAMPA/dampa1.jpg" width="850px">
+		<img src="DAMPA/dampa2.jpg" width="750px">
+		<img src="DAMPA/dampa3.jpg" width="950px">
+		</div>
+	</div>
+	
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>// B A S U R A_I S L A N D //</h3>
+  <p>14°30'39.1"N 120°58'32.6"E</p>
+  <p text-align="justify">A seaside spot, you can go camping here or just sit and stare at the beautiful scenery here.</p>
+  <div class="row">
+		<div class="column">
+		<img src="BASURA_ISLAND/basura1.jpg" width="850px">
+		<img src="BASURA_ISLAND/basura2.jpg" width="850px">
+		<img src="BASURA_ISLAND/basura3.jpg" width="850px">
+		<img src="BASURA_ISLAND/basura4.jpg" width="850px">
+		
+		</div>
+	</div>
+ 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>// A M O S U P //</h3>
+  <p>14°34'23.7"N 120°59'20.3"E</p>
+  <p text-align="justify">This road is not a busy street, but expect cars to pass by. There are many trees here; this spot is good for exercising.</p>
+   
+   <div class="row">
+		<div class="column">
+		<img src="AMOSUP/AMO.jpg" width="850px">
+		<img src="AMOSUP/AMO2.jpg" width="850px">
+		<img src="AMOSUP/AMO1.jpg" width="850px">
+		<img src="AMOSUP/AMO3.jpg" width="850px">
+		</div>
+	</div>
+	
+  
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>// G L O R I A_M A R I S //</h3>
+  <p>14°33'22.6"N 120°58'43.9"E</p>
+  <p text-align="justify">A spot where many people gather to practice their bike tricks, its also good for exercising because of its spacious area. There's also a basketball court here and a nearby store that sells expensive food.</p>
+  
+	<div class="row">
+		<div class="column">
+		<img src="GLORIA_MARIS/GM.jpg" width="850px">
+		<img src="GLORIA_MARIS/GM2.jpg" width="850px">
+		<img src="GLORIA_MARIS/GM1.jpg" width="635px">
+		<img src="GLORIA_MARIS/GM3.jpg" width="1060px">
+		</div>
+	</div>
+	
+</div>
+
+
+
+<script>
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+
+
+
+
+
+
+</BODY>
+</HTML>
